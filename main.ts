@@ -17,6 +17,7 @@ input.onButtonPressed(Button.A, function () {
         `)
 })
 input.onGesture(Gesture.Shake, function () {
+    basic.clearScreen()
     for (let I = 0; I <= 4; I++) {
         for (let j = 0; j <= 4; j++) {
             x = -1
@@ -57,7 +58,6 @@ function Q3 (x: number, y: number) {
         }
         basic.pause(100)
     }
-    basic.pause(500)
 }
 let x = 0
 radio.setGroup(5)
